@@ -18,7 +18,7 @@ class CannonBall {
     
     //defina o ângulo da bala para o canhão
     var velocity = p5.Vector.fromAngle(cannon.angle);
-    velocity.multi(20);
+    velocity.mult(20);
     //defina valor estático para o corpo
     Matter.Body.setStatic(this.body,false);
     //defina a velocidade da bala para fazer a bala se mover
