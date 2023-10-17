@@ -8,7 +8,9 @@ class CannonBall {
     };
     this.r = 40;
 //crie um corpo circular
+    this.body=Bodies.circle(x, y, this.r, options);
 //carregue a imagem
+    this.image=loadImage("./
     World.add(world, this.body);
   }
 
