@@ -23,6 +23,7 @@ function setup() {
   tower = new Tower(150, 350, 160, 310);
   cannon = new Cannon(180, 110, 100, 50, angle);
 //criar um objeto para bala de canhão
+   cannonBall = new CannonBall(cannon.x, cannon.y )
 }
 
 function draw() {
@@ -38,6 +39,7 @@ function draw() {
   cannon.display();
   tower.display();
 //mostrar a bala de canhão
+  cannonBall.display();
 }
 
 
@@ -47,4 +49,6 @@ function draw() {
 
 function keyReleased() {
  //use a tecla para baixo para chamar a função shoot (tiro)
+   if ( keyCode == DOWN_ARROW){
+  cannonBall.shoot();
 }
